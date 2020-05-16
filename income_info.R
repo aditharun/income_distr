@@ -1,6 +1,6 @@
 #lets start from the basics
 library(tidyverse)
-soi.data <- read_csv("17incyallagi.csv")
+soi.data <- read_csv("raw_data/17incyallagi.csv")
 
 #the upper bound on the last interval will not matter so we can set it to the placeholder value of 0
 agi <- c(0.001,1, 10000,25000,50000,75000,100000,200000,0)

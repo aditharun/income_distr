@@ -10,12 +10,12 @@ if (!dir.exists(outputdir)){
 }
 
 library(tidyverse)
-path <- "modeledData_2015.csv"
+path <- "ref/modeledData_2015.csv"
 data <- read_csv(path)
 data <- data %>% group_by(STATE) %>% filter(row_number()==1)
 data$X1 <- NULL
 data$threshold <- qexp(0.99, rate=data$param)
-comp <- readRDS("comp_epi.rds") %>% as_tibble()
+comp <- readRDS("ref/comp_epi.rds") %>% as_tibble()
 comp$states <- as.character(comp$states)
 data$epi.income <- comp$epi.income[match(data$COUNTYNAME, comp$states)]
 
