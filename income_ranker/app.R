@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
 
-path <- "../modeledData.csv"
+path <- "modeledData.csv"
 data <- read_csv(path)
 
 # Define UI for application that draws a histogram

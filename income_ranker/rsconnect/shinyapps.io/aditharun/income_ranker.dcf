@@ -1,0 +1,10 @@
+name: income_ranker
+title:
+username:
+account: aditharun
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2308748
+bundleId: 3154276
+url: https://aditharun.shinyapps.io/income_ranker/
+when: 1589605021.07539

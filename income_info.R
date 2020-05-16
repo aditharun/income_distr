@@ -96,7 +96,7 @@ y <- tax.data %>% group_by(COUNTYNAME, STATE) %>% select(c(STATE, COUNTYNAME, N1
 y$data <- NULL
 
 
-write.csv(y, "modeledData.csv")
+write.csv(y, "income_ranker/modeledData.csv")
 
 
 
